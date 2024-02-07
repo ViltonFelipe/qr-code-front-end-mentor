@@ -3,6 +3,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    margin: 0
 }
     
 body {
@@ -10,37 +15,43 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: hsl(212, 45%, 89%);
-    font: normal 15px Outfit;
-    text-align: center;
-    
     height: 100vh;
+
+    background-color: hsl(212, 45%, 89%);
 }
-p {
-    padding: 0 30px;    
+
+.qrcode {
+    width: 310px;
+
+    border-radius: 20px;
+    padding: 15px 0 25px;
+
+    text-align: center;
+        
+    background-color: hsl(0, 0%, 100%);
+}
+
+.qrcode img {
+    width: 280px;
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.qrcode h1 {
+    padding: 5px 20px;
+    margin: 0;
+
+    color: hsl(218, 44%, 22%);
+    font-family: 'outfit';
+    font-size: 21.5px;
+}
+
+.qrcode p {
+    padding: 10px 25px;
     
     color: hsl(220, 15%, 55%);
-    font-size: 21px;
-    font-weight: 400;
-}
-h1 {
-    display: block;
-    padding: 10px;
-    
-    color: hsl(218, 44%, 22%);
-    font-weight: 700;
-}
-img {
-    width: 400px;
-    border-radius: 10px;
-}
-.qrcode {
-    width: 400px;
-
-    padding: 20px;
-    border-radius: 20px;
-    
-    background: hsl(0, 0%, 100%);
+    font: normal 15px 'outfit';
 }
 
 .attribution { 
@@ -48,54 +59,4 @@ img {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
-}
-
-@media (max-width: 700px) {
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-color: hsl(212, 45%, 89%);
-        font: normal 15px Outfit;
-        text-align: center;
-
-        height: 100vh;
-    }
-    p {
-        padding: 0 10px;
-
-        font-weight: 400;
-        font-size: 15px;
-        color: hsl(220, 15%, 55%);
-    }
-    h1 {
-        display: block;
-
-        padding: 10px;
-        
-        color: hsl(218, 44%, 22%);
-        font-weight: 700;
-        font-size: 21px;
-    }
-    img {
-        width: 275px;
-
-        border-radius: 10px;
-    }
-    .qrcode {
-        width: 275px;
-
-        border-radius: 15px;
-        padding: 15px;
-        
-        background: hsl(0, 0%, 100%);
-    }
-    
-    .attribution { 
-        display: none;
-    }
-    .attribution a {
-        color: hsl(228, 45%, 44%);
-    }
 }
